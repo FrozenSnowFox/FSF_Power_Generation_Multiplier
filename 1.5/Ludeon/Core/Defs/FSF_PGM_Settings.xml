@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<XmlExtensions.SettingsMenuDef>
+		<defName>FrozenSnowFoxPGMSettings</defName> <!--Can be anything unique with no periods-->
+		<modId>FrozenSnowFox.PowerGenMultiplier</modId> <!--MUST be the same as the one entered earlier-->    
+		<label>FrozenSnowFox Power Generation Multiplier</label> <!-- This is what displays as your mod's name-->    
+		<settings> <!--This is where you define what settings are in the settings menu-->
+
+			<li Class="XmlExtensions.Setting.SetColor">
+				<color>(187,0,0)</color>
+			</li>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>For any changed settings to take effect the game must be restarted.</text>
+				<font>Medium</font>
+				<anchor>Middle</anchor>
+				<tKey>FSFPGMWarning</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.SetColor"/>
+			<li Class="XmlExtensions.Setting.GapLine">
+			</li>
+			
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Power Generation Multiplier Settings</text>
+				<font>Medium</font>
+				<anchor>Middle</anchor>
+				<tKey>FSFPGMSettingsTitle</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.GapLine">
+			</li>
+			
+			<!-- Power Generation Multiplier -->
+			
+			<li Class="XmlExtensions.Setting.SetColor">
+				<color>(163,177,188)</color>
+			</li>
+			<li Class="XmlExtensions.Setting.Slider">
+				<key>FSFPGMPowerGenerationMultiplier</key>
+				<defaultValue>2.0</defaultValue>
+				<min>1.0</min>
+				<max>50.0</max>
+				<decimals>1</decimals>
+				<label>Power Generation Multiplier {FSFPGMPowerGenerationMultiplier}</label>
+				<tKey>FSFPGMPowerGenerationMultiplier</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.SetColor"/>
+			<li Class="XmlExtensions.Setting.SetColor">
+				<color>(163,177,188)</color>
+			</li>
+			<li Class="XmlExtensions.Setting.Slider">
+				<key>FSFPGMBatteryStorageMultiplier</key>
+				<defaultValue>2.0</defaultValue>
+				<min>1.0</min>
+				<max>50.0</max>
+				<decimals>1</decimals>
+				<label>Battery Storage Capacity Multiplier {FSFPGMBatteryStorageMultiplier}</label>
+				<tKey>FSFPGMBatteryStorageMultiplier</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.SetColor"/>
+			<li MayRequire="vanillaquestsexpanded.generator" Class="XmlExtensions.Setting.SetColor">
+				<color>(163,177,188)</color>
+			</li>
+			<li MayRequire="vanillaquestsexpanded.generator" Class="XmlExtensions.Setting.Slider">
+				<key>FSFPGMVQEGPowerGenerationMultiplier</key>
+				<defaultValue>2.0</defaultValue>
+				<min>1.0</min>
+				<max>50.0</max>
+				<decimals>1</decimals>
+				<label>Vanilla Quests Expanded The Generator - Power Generation Multiplier {FSFPGMVQEGPowerGenerationMultiplier}</label>
+				<tKey>FSFPGMVQEGPowerGenerationMultiplier</tKey>
+			</li>
+			<li MayRequire="vanillaquestsexpanded.generator" Class="XmlExtensions.Setting.SetColor"/>
+			<li Class="XmlExtensions.Setting.SetColor">
+				<color>(163,177,188)</color>
+			</li>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Move the sliders to adjust the multiplier of all Power Generating items and the Storage Capacity of all Batteries.  The value is a straight multiplier, a value of 2 will double the original while 3 will triple it.\nThe Vanilla value is 1.</text>
+				<tKey>FSFPGMInputDesc</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.SetColor"/>
+			
+			
+			
+			<li Class="XmlExtensions.Setting.GapLine">
+			</li>
+						
+		</settings>
+	</XmlExtensions.SettingsMenuDef>
+
+</Defs>

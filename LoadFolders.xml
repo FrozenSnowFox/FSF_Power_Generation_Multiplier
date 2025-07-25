@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<loadFolders>
+	
+	<v1.5>	
+
+		<!-- Ludeon -->
+		
+		<!-- Core -->
+		
+		<li>/</li>
+		<li>1.5/Ludeon/Core</li>
+		
+	</v1.5>
+	
+	<v1.6>
+
+		<!-- Ludeon -->
+		
+		<!-- Core -->
+		
+		<li>/</li>
+		<li>1.6/Ludeon/Core</li>
+		
+	</v1.6>
+	
+</loadFolders>

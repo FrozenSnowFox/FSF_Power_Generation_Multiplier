@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+
+	<name>[FSF] Power Generation Multiplier</name>
+	<author>FrozenSnowFox</author>
+	<packageId>FrozenSnowFox.PowerGenMultiplier</packageId>
+	<description>Allows you to multiply the power generation of all Power Generating items and the Storage Capacity of all Batteries by an input value.</description>
+	<modIconPath IgnoreIfNoMatchingField="True">ModIcon/FSFModIcon</modIconPath>
+	<supportedVersions>
+		<li>1.5</li>
+		<li>1.6</li>
+	</supportedVersions>
+	<modDependencies>
+    	<li>
+	        <packageId>imranfish.xmlextensions</packageId>
+			<displayName>XML Extensions</displayName>
+			<downloadUrl>https://github.com/15adhami/XmlExtensions/releases</downloadUrl>
+	        <steamWorkshopUrl>steam://url/CommunityFilePage/2574315206</steamWorkshopUrl>
+	    </li>
+	</modDependencies>
+	<loadAfter>
+		<li>imranfish.xmlextensions</li>
+		<li>vanillaquestsexpanded.generator</li>
+	</loadAfter>
+	
+</ModMetaData>

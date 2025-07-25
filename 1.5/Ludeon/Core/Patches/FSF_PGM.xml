@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="XmlExtensions.UseSettings">
+		<modId>FrozenSnowFox.PowerGenMultiplier</modId>
+		<keys>
+			<li>FSFPGMPowerGenerationMultiplier</li>
+			<li>FSFPGMBatteryStorageMultiplier</li>
+			<li>FSFPGMVQEGPowerGenerationMultiplier</li>
+		</keys>
+		<defaultValues>
+			<li>2.0</li>
+			<li>2.0</li>
+			<li>2.0</li>
+		</defaultValues>
+		<apply>
+			
+		<Operation Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				
+			<!-- Power Generation Multiplier -->
+				
+			<li Class="XmlExtensions.PatchOperationMath">
+				<xpath>/Defs/ThingDef/comps/li[@Class = "CompProperties_Power"] [(substring-after(basePowerConsumption, '-'))] /basePowerConsumption</xpath>
+				<value>{FSFPGMPowerGenerationMultiplier}</value>
+				<operation>*</operation>
+			</li>
+				
+			<!-- Battery Storage Capacity Multiplier -->
+				
+			<li Class="XmlExtensions.PatchOperationMath">
+				<xpath>/Defs/ThingDef/comps/li[@Class = "CompProperties_Battery"]/storedEnergyMax</xpath>
+				<value>{FSFPGMBatteryStorageMultiplier}</value>
+				<operation>*</operation>
+			</li>
+				
+			<!-- VQE The Generator - Power Generation Multiplier -->
+				
+			<li MayRequire="vanillaquestsexpanded.generator" Class="XmlExtensions.PatchOperationMath">
+				<xpath>/Defs/ThingDef/comps/li[@Class = "VanillaQuestsExpandedTheGenerator.CompProperties_PowerGenetron"] [(substring-after(basePowerConsumption, '-'))] /basePowerConsumption</xpath>
+				<value>{FSFPGMVQEGPowerGenerationMultiplier}</value>
+				<operation>*</operation>
+			</li>
+				
+			</operations>
+		</Operation>
+			
+		</apply>
+	</Operation>
+
+</Patch>
