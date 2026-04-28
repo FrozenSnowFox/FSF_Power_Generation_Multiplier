@@ -66,19 +66,6 @@
 				<tKey>FSFPGMVanometricGenerationMultiplier</tKey>
 			</li>
 			<li Class="XmlExtensions.Setting.SetColor"/>
-			<li MayRequire="vanillaquestsexpanded.generator" Class="XmlExtensions.Setting.SetColor">
-				<color>(163,177,188)</color>
-			</li>
-			<li MayRequire="vanillaquestsexpanded.generator" Class="XmlExtensions.Setting.Slider">
-				<key>FSFPGMVQEGPowerGenerationMultiplier</key>
-				<defaultValue>2.0</defaultValue>
-				<min>1.0</min>
-				<max>50.0</max>
-				<decimals>1</decimals>
-				<label>Vanilla Quests Expanded The Generator - Power Generation Multiplier {FSFPGMVQEGPowerGenerationMultiplier}</label>
-				<tKey>FSFPGMVQEGPowerGenerationMultiplier</tKey>
-			</li>
-			<li MayRequire="vanillaquestsexpanded.generator" Class="XmlExtensions.Setting.SetColor"/>
 			<li Class="XmlExtensions.Setting.SetColor">
 				<color>(163,177,188)</color>
 			</li>
